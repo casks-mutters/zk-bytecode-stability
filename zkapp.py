@@ -64,6 +64,8 @@ def main() -> None:
     changes_detected = False
 
     for block in range(args.from_block, args.to_block + 1, args.step):
+           print(f"🔎 Checking block {block} ...")
+        
         meta = get_contract_metadata(w3, args.address, block)
         metadata_history.append({"block": block, **meta})
 
