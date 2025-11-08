@@ -11,6 +11,13 @@ It is particularly useful for detecting unauthorized redeployments or stealth up
 - Works with any EVM-compatible chain  
 - JSON output for automated monitoring  
 
+## Installation
+1. Install Python 3.9+  
+2. Install dependencies:
+   pip install web3 eth-utils
+3. Set your RPC endpoint:
+   export RPC_URL=https://mainnet.infura.io/v3/YOUR_KEY
+   
 ## Usage
 Monitor a contract between two blocks:
    python app.py --address 0xYourContract --from-block 18000000 --to-block 19000000
